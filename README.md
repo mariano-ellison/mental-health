@@ -5,14 +5,14 @@ We implemented it with some minor modifications. The important point to note is 
 
 We attach the relevant code sections.
 
-# Download scaler with Pickle
+### Download scaler with Pickle
 import pickle
 
-# Save scaler to file
+### Save scaler to file
 with open('students_scaler.pkl', 'wb') as f:
     pickle.dump(scaler, f)
 
 from google.colab import files
 
-# This will download scaler.pkl to your local machine
+### This will download scaler.pkl to your local machine
 files.download('students_scaler.pkl')
